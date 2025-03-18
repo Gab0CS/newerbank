@@ -583,12 +583,11 @@
   }
 
   .root-layout {
-    display: flex;
-    height: 4rem;
-    align-items: center;
-    justify-content: space-between;
+    height: 4rem !important;
+    align-items: center !important;
+    justify-content: space-between !important;
     padding: 1.25rem !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
   }
 
   .bank-info_content {
@@ -634,39 +633,39 @@
 
   .sidebar {
     position: sticky;
-    left: 0;
-    top: 0;
+    left: 0 !important;
+    top: 0 !important;
     display: flex;
-    height: 100vh;
-    width: fit-content;
-    flex-direction: column;
-    justify-content: space-between;
-    border-right: 1px solid #e5e7eb;
-    background-color: #ffffff;
+    height: 100vh !important;
+    width: fit-content !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    border-right: 1px solid #e5e7eb !important;
+    background-color: #ffffff !important;
     padding-top: 2rem !important;
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .sidebar-logo {
-    font-size: 26px;
-    font-family: 'IBM Plex Serif', serif;
-    font-weight: 700;
-    color: #000000;
+    font-size: 26px !important;
+    font-family: 'IBM Plex Serif', serif  !important;
+    font-weight: 700  !important;
+    color: #000000  !important;
   }
 
   .sidebar-link {
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
+    display: flex !important;
+    gap: 0.75rem !important;
+    align-items: center !important;
     padding: 0.75rem !important;
-    border-radius: 0.5rem;
-    justify-content: center;
+    border-radius: 0.5rem !important;
+    justify-content: start !important;
   }
 
   .sidebar-label {
-    font-size: 16px;
-    font-weight: 600;
-    color: #000000;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #000000 ;
   }
 }
 
