@@ -4,12 +4,12 @@ import TotalBalanceBox from '@/components/TotalBalanceBox';
 import React from 'react'
 
  const Home = () => {
-  const loggedIn = { firstName : 'Gabriel' };
+  const loggedIn = { firstName : 'Gabriel', lastName: "Canseco", email: 'gabocanseco@gmail.com'};
 
   return (
-    <section className="home">
-      <div className="home-content">
-        <header className="home-header">
+    <section className="no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll">
+      <div className="no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll">
+        <header className="flex flex-col justify-between gap-8">
           <HeaderBox 
             type="greeting"
             title="Welcome"
@@ -27,7 +27,10 @@ import React from 'react'
       RECENT TRANSACTIONS
 
       </div>
-      <RightSidebar />
+      <RightSidebar 
+      user={loggedIn} 
+      transactions={[]}
+      banks={[{ currentBalance: 123.4 }, {currentBalance: 123.4}]}/>
     </section>
   )
 }

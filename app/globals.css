@@ -226,6 +226,7 @@
     flex-direction: column;
     border-left: 1px solid #e5e7eb;
     width: 355px;
+
   }
 
   .profile-banner {
@@ -233,12 +234,14 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url('/icons/gradient-mesh.svg');
   }
 
   .profile {
+    position: relative;
     display: flex;
     padding: 1.5rem !important;
-    justify-content: center;
+    justify-content: start;
   }
 
   .profile-img {
@@ -259,7 +262,7 @@
   .profile-details {
     display: flex;
     flex-direction: column;
-    padding-top: 6rem !important;
+    padding-top: 4rem !important;
   }
 
   .profile-name {
@@ -280,6 +283,7 @@
     justify-content: space-between;
     gap: 2rem;
     padding: 2rem 1.5rem !important;
+    /* flex flex-col justify-between gap-8 px-6 py-8 */
   }
 
   .my-banks {
@@ -358,11 +362,12 @@
     display: flex;
     height: 190px;
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     justify-content: space-between;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     border: 1px solid #ffffff;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    background: linear-gradient(90deg, #0179FE 0%, #4893FF 100%);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
   }
